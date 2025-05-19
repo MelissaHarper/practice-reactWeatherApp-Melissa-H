@@ -1,35 +1,26 @@
-import { Link, useEffect, useState } from "react"
-import data from "../data/cityData"
-
+import { Link } from "react-router-dom";
+import data from "../data/cityData";
 
 const CityList = () => {
+  let allCities = Object.keys(data);
+  console.log(allCities);
 
-    const [allCities, setAllCities] = useState([]);
+  const cityLinks = (
+    <div className="container">
+      <h1 className="title">City List</h1>
+      <ul className="city-list">
+        {allCities.map((city, index) => (
+          <li key={index} className="city-list-item">
+            <Link to={`/forecast/${city}`}>
+              <span className="city-link">{city}</span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 
-    let getCities = () => {
-        let cities = Object.keys(data);
-        setAllCities(cities)
-    }
+  return cityLinks;
+};
 
-    useEffect(() => {
-        getCities(data);
-    }, []);
-
-    return (
-        <div className="container">
-    <h1 className="title">City List</h1>
-    <ul className="city-list">
-    {allCities.map((city, index) => (
-        <li key={index} className="task-item">
-        <Link to={`/forecast/${city}`} className="city-link">
-            {city}
-        </Link>
-        </li>
-    ))}
-    </ul>
-</div>
-);
-
-}
-
-export default CityList
+export default CityList;

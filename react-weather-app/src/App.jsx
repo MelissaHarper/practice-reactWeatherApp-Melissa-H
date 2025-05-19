@@ -1,18 +1,20 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import './App.css'
-import CityForecast from './components/CityForecast';
-import CityList from './components/CityList';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CityList from "./components/CityList";
+import CityForecast from "./components/CityForecast";
+import "./App.css";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<CityList />} />
-        <Route path="/task/:cityName" element={<CityForecast/>} />
-      </Routes>
-         </Router>
+    <BrowserRouter>
+      <div className="app">
+        <h1>City Forecast Lookup</h1>
+        <Routes>
+          <Route path="/" element={<CityList />} />
+          <Route path="/forecast/:cityName" element={<CityForecast />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
-
 }
 
-export default App
+export default App;
