@@ -14,20 +14,24 @@
 
 .city-list {
   text-align: center;
+  color: #4a5f75;
 }
 
 .city-list ul {
+  text-align: center;
   list-style: none;
-  padding: 0;
+  margin: 0;
 }
 
 .city-list li {
+  text-align: center;
   margin: 10px 0;
 }
 
 .city-list a {
+  text-align: center;
   text-decoration: none;
-  color: #007bff;
+  color: #8e9baa;
   font-size: 1.2em;
 }
 
@@ -69,7 +73,7 @@
   padding: 10px;
 }
 
-a {
+.details a {
   background-color: #636464;
   border-radius: 3px;
   padding: 5px;
