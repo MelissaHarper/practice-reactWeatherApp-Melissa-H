@@ -7,7 +7,7 @@ const CityList = () => {
 
   const cityLinks = (
     <div className="container">
-      <h1 className="title">City List</h1>
+      <h2 className="title">City List</h2>
       <ul className="city-list">
         {allCities.map((city, index) => (
           <li key={index} className="city-list-item">
