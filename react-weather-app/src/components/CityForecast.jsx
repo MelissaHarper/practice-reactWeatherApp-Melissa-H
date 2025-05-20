@@ -29,7 +29,7 @@ function CityForecast() {
   return (
     <div className="forecast">
       <h2>{cityName}</h2>
-      <p>
+      <p className="summary">
         <strong>Summary:</strong> {weather.summary}
       </p>
       <button onClick={scrollToDetails}>View Details</button>

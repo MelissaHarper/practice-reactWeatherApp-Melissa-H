@@ -5,38 +5,78 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.city-list {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.city-list ul {
+  list-style: none;
+  padding: 0;
 }
 
-.card {
-  padding: 2em;
+.city-list li {
+  margin: 10px 0;
 }
 
-.read-the-docs {
-  color: #888;
+.city-list a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1.2em;
+}
+
+.city-list a:hover {
+  text-decoration: underline;
+}
+
+.forecast {
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.forecast p {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  color: black;
+}
+
+.forecast button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 40px 0px 5px;
+}
+
+.forecast button:hover {
+  border-color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.details {
+  justify-content: end;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+a {
+  background-color: #636464;
+  border-radius: 3px;
+  padding: 5px;
+  margin-top: 20px;
+  color: #020463;
+}
+
+a:hover {
+  text-decoration: underline;
 }
